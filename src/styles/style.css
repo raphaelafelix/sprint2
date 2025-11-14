@@ -1,0 +1,17 @@
+@import url('./global.css');
+
+body{
+    background-color: var(--color-neutral-green);
+}
+
+main img{
+    width: 616px;
+    height: 638px;
+}
+
+.portal-imagem{
+    display:flex;
+    justify-content:center;
+    margin-top:138px;
+}
+
