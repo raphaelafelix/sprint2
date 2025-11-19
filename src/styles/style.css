@@ -4,11 +4,28 @@ body{
     background-color: var(--color-neutral-green);
 }
 
+.container-global{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-left:88px;
+}
+
 .titulo{
     display: flex;
     flex-direction:column;
     overflow-wrap: break-word;
+    justify-content:
     margin-left:54px;
     margin-top:216px;
     font-size:20px;
 }
+
+.portal-login{
+    display:flex;
+    flex-direction:column;
+    align-content:flex-end;
+}
+
+
+
