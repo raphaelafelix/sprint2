@@ -2,20 +2,19 @@
 
 body{
     background-color: var(--color-neutral-green);
+    width:1317px;
+    height:775px;
 }
 
 .container-global{
     display:flex;
-    justify-content:flex-start;
-    align-items:center;
-    margin-left:88px;
+    flex-direction:column;
 }
 
 .titulo{
     display: flex;
     flex-direction:column;
     overflow-wrap: break-word;
-    justify-content:
     margin-left:54px;
     margin-top:216px;
     font-size:20px;
@@ -27,5 +26,29 @@ body{
     align-content:flex-end;
 }
 
+.card-portal{
+    background-color:var(--color-neutral-dark_green);
+    display:flex;
+    width:452px;
+    height:456px;
+    align-self:end;
 
+}
 
+.class-senha{
+    display:flex;
+    flex-direction:row;
+}
+.class-login{
+    display:flex;
+    
+}
+
+.container-login{
+    background-color:var(--color-neutral-dark_green);
+    display:flex;
+    width:452px;
+    height:456px;
+    align-self:end;
+
+}
