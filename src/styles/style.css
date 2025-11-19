@@ -4,23 +4,11 @@ body{
     background-color: var(--color-neutral-green);
 }
 
-main img{
-    width: 616px;
-    height: 638px;
-    margin-top: 88px;
-}
-
-.portal-imagem{
-    display:flex;
-    justify-content:center;
-}
-
-.content-portal{
+.titulo{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 216px;
-    margin-left: 54px ;
-
+    flex-direction:column;
+    overflow-wrap: break-word;
+    margin-left:54px;
+    margin-top:216px;
+    font-size:20px;
 }

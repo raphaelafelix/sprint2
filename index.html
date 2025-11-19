@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./src/styles/global.css">
     <link rel="stylesheet" href="./src/styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>Laguna School</title>
 </head>
+
+
 <body>
     <!------- INÍCIO DA PÁGINA --------->
-    <section>
-        <div class="content-portal">
-            <h2> Bem-vindo ao Portal Laguna School</h2>
-            <p>Aprender é viver novas experiências todos os dias. Aqui, o conhecimento é o nosso maior impulso! Este é o seu espaço de crescimento, curiosidade e descobertas. Acesse sua conta e continue sua jornada de aprendizado com conteúdos, desafios e oportunidades feitos especialmente para você.</p>
-        </div>
-
-    </section>
-    <div class="portal-imagem">
-        <img src="./src/assets/images/logo do site 1.svg" alt="">
+    <div class="titulo">
+            <h2> Bem-vindo ao <br> Portal Laguna School </br></h2>
+            <p>Aprender é viver novas experiências todos os dias. <br> Aqui, o conhecimento
+             o nosso maior impulso! Este é o seu espaço de crescimento,<br> curiosidade e descobertas. </br></br> Acesse sua conta e continue sua jornada de aprendizado com conteúdos, <br> desafios e oportunidades feitos especialmente para você. </br> </p>
     </div>
 
+    <section class="card-portal">
+        <form action="/login" method="get">
+            <label for="login"> Login </label>
+        <input type="text" id="login" name="login">
+
+        <label for="senha"> Senha: </label>
+        <input type="password" id="senha" name="senha">
+
+        <button type="submit"> Entrar </button>
+        </form>
+    </section>
+
+
     <!------- FIM DA PÁGINA --------->
-    
 </body>
 </html>
