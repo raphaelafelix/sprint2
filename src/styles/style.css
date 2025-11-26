@@ -2,53 +2,335 @@
 
 body{
     background-color: var(--color-neutral-green);
-    width:1317px;
-    height:775px;
+    
 }
 
 .container-global{
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1317px;
+    margin: 0 auto; 
+    padding: 100px 54px; 
 }
 
 .titulo{
     display: flex;
-    flex-direction:column;
-    overflow-wrap: break-word;
-    margin-left:54px;
-    margin-top:216px;
-    font-size:20px;
+    flex-direction: column;
+    max-width: 500px; 
+    margin: 0; 
 }
 
-.portal-login{
-    display:flex;
-    flex-direction:column;
-    align-content:flex-end;
+
+
+.class-login, .class-senha {
+    color: var(--color-neutral-white); 
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px; 
 }
+
+.portal-login input[type="text"], /* gente descobri esse comando perfeitinho aq, ele é bem especifico e ajeita so o campo especifico */
+.portal-login input[type="password"] {
+    width: 90%; 
+    padding: 15px; 
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-neutral-white); 
+    font-size: 18px;
+}
+
+.portal-login button[type="submit"] {
+    
+    background-color: var(--color-neutral-brown);
+    color: var(--color-neutral-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px; 
+    font-size: 18px;
+}
+
+
 
 .card-portal{
-    background-color:var(--color-neutral-dark_green);
-    display:flex;
-    width:452px;
-    height:456px;
-    align-self:end;
+    background-color: var(--color-neutral-dark_green); 
+    width: 452px;
+    height: 456px; 
+    padding: 30px;
+    box-sizing: border-box;
+    border: 5px solid var(--color-neutral-pink); 
+    border-radius: 10px; 
+    margin-top: -100px; 
 
 }
 
-.class-senha{
-    display:flex;
-    flex-direction:row;
+/* FIM PÁGINA DE LOGIN considerações pro joao e mari: nao gostei pq tem espaço vago, se puderem ajustar isso (colocar os itens um pouco mais pra cima) e o que quiserem ajustar a mais, fiquem a vontade <3 ! */ 
+
+
+
+
+/* INÍCIO DA PÁGINA DO ALUNO */ 
+
+
+
+
+.aluno{
+    background-color: var(--color-neutral-green);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
-.class-login{
-    display:flex;
+
+
+.container-principal {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+    padding: 50px; 
+    box-sizing: border-box;
+}
+
+
+.cabecalho-topo {
+    background-color: var(--color-neutral-white);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 40px; 
+    position: absolute; 
+    top: 0px;
+}
+
+.cabecalho-topo h1 {
+    color: var(--color-neutral-brown); 
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.btn-voltar {
+    background-color: var(--color-neutral-dark_green);
+    color: var(--color-neutral-white); 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px; 
+    margin-top: 50px; 
+}
+
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-neutral-white); 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-usuario {
+    width: 50px;
+    height: 50px;
+    background-color: #A9A9A9; 
+    border-radius: 50%;
     
 }
 
-.container-login{
-    background-color:var(--color-neutral-dark_green);
-    display:flex;
-    width:452px;
-    height:456px;
-    align-self:end;
-
+.nome-estudante {
+    font-size: 24px;
+    color: var(--color-neutral-brown);
+    margin: 0;
 }
+
+.mensagem p {
+    color: var(--color-neutral-brown);
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.botoes-acao {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+.btn-atividades {
+    background-color: var(--color-neutral-dark_green);
+    color: var(--color-neutral-white);
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.rodape-frase {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.rodape-frase p {
+    color: var(--color-neutral-brown);
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.detalhe-rodape {
+    font-size: 12px;
+    opacity: 0.7; /* deixa meio transparente */
+}
+
+/* FIM DA PÁGINA DO ALUNO (esse tá feinho, mas prometo deixar ele mais bonito depois!)*/
+
+
+/* INÍCIO PAGINA DO EDUCADOR */
+
+
+.professor{
+    background-color: var(--color-neutral-green);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.container-professor {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+    padding: 50px; 
+    box-sizing: border-box;
+}
+
+
+.cabecalho-topo-professor {
+    background-color: var(--color-neutral-white);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 40px; 
+    position: absolute; 
+    top: 0px;
+}
+
+.cabecalho-topo-professor h1 {
+    color: var(--color-neutral-brown); 
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.btn-voltar-professor {
+    background-color: var(--color-neutral-dark_green);
+    color: var(--color-neutral-white); 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+.main-content-professor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px; 
+    margin-top: 50px; 
+}
+
+
+.avatar-professor {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-neutral-white); 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-usuario-professor {
+    width: 50px;
+    height: 50px;
+    background-color: #A9A9A9; 
+    border-radius: 50%;
+    
+}
+
+.nome-professor {
+    font-size: 24px;
+    color: var(--color-neutral-brown);
+    margin: 0;
+}
+
+.mensagem-professor p {
+    color: var(--color-neutral-brown);
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.botoes-acao-professor {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+.btn-atividades-professor {
+    background-color: var(--color-neutral-dark_green);
+    color: var(--color-neutral-white);
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.rodape-frase-professor {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.rodape-frase-professor p {
+    color: var(--color-neutral-brown);
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.detalhe-rodape-professor {
+    font-size: 12px;
+    opacity: 0.7; /* deixa meio transparente */
+}
+
+/* FIM PAGINA DO EDUCADOR */
+
+/* ainda falta a página pra checar as atividades, mas metade já foi! gratidão bbs */
